@@ -1,0 +1,231 @@
+@tailwind base;
+
+@layer base {
+  body {
+    @apply bg-dark text-white
+  }
+}
+
+@tailwind components;
+
+@layer components {
+  .container {
+    @apply max-w-[1536px] mx-auto relative px-4 sm:px-8 lg:px-10
+  }
+
+  .header {
+    @apply sticky top-5 sm:top-8 text-center w-[90%] sm:max-w-[340px] mx-auto z-40
+  }
+
+  .navbar {
+    @apply flex justify-between sm:inline-block p-4 px-6 rounded-lg backdrop-blur-[10px] bg-[#3a3a3c50]
+  }
+
+  .navbar-items {
+    @apply sm:flex sm:gap-8 sm:justify-center font-semibold
+  }
+
+  .navbar-link {
+    @apply cursor-pointer text-white relative hover:underline hover:underline-offset-4 
+  }
+
+  .navbar-items > li:first-child ~ li  {
+    @apply hidden sm:block
+  }
+
+  .navbar-btn {
+    @apply block sm:hidden font-semibold
+  }
+
+  .navigation-modal {
+    @apply fixed inset-0 z-50 backdrop-blur-[10px] sm:hidden
+  }
+
+  .navbar-modal {
+    @apply absolute top-5 left-1/2 -translate-x-1/2 w-[95%] inline-block z-50 backdrop-blur-[10px] bg-[#ffffff15] rounded-lg p-6 pt-8 sm:hidden
+  }
+
+  .navbar-modal-items {
+    @apply flex flex-col gap-4 w-full h-full font-semibold
+  }
+
+  .close-modal {
+    @apply absolute top-2 right-2 z-50 text-xl cursor-pointer fill-white
+  }
+
+  .hero {
+    @apply text-center py-16 sm:py-24 lg:py-0 lg:h-screen lg:flex lg:flex-col lg:items-center lg:justify-center
+  }
+
+  .hero-title {
+    @apply text-4xl font-bold sm:text-6xl lg:text-8xl mb-8 lg:mb-16
+  }
+
+  .hero-description {
+    @apply text-base mx-auto sm:text-lg lg:text-xl sm:w-2/3 lg:w-1/2 mb-10
+  }
+
+  .hero-socials {
+    @apply flex items-center justify-center gap-8 text-2xl mx-auto
+  }
+
+  .hero-socials img {
+    @apply hover:fill-light focus:fill-hover
+  }
+
+  .section {
+    @apply mt-16 md:mt-24 lg:mt-40
+  }
+
+  .section-header {
+    @apply text-2xl font-bold mb-6 sm:text-3xl sm:mb-8
+  }
+
+  .about-body {
+    @apply md:flex md:gap-6 lg:gap-16 
+  }
+
+  .about-body img{
+    @apply mb-6 mx-auto max-h-[350px] w-auto md:mb-0 md:w-auto md:h-auto md:max-h-[500px] md:max-w-[350px] lg:max-w-none
+  }
+
+  .about-title {
+    @apply text-2xl font-bold mb-6 md:text-4xl
+  }
+
+  .about-description {
+    @apply text-base md:w-full xl:w-[70%] lg:text-[1rem] xl:text-xl
+  }
+
+  .about-resume {
+    @apply bg-sm-dark text-white py-2 px-4 my-8 rounded-lg inline-flex 
+  }
+  .download-icon {
+    @apply ml-2 w-[25px] h-[25px]
+  }
+
+
+  .slider-navigation{
+    @apply flex mb-6 gap-4
+  }
+
+  .slider-btn {
+    @apply text-xl sm:text-3xl bg-sm-dark rounded-md p-1 disabled:opacity-40
+  }
+
+  .project-wrapper {
+    @apply flex gap-14 overflow-x-auto snap-x snap-mandatory scroll-smooth
+  }
+
+  .project-card {
+    @apply snap-start min-w-[300px] lg:min-w-[650px] lg:max-h-[620px] lg:min-h-[620px] h-fit bg-md-dark border-border rounded-lg px-4 py-6 text-white overflow-hidden
+  }
+
+  .project-card-title {
+    @apply text-lg font-bold mb-2 
+  }
+
+  .project-card-img-container {
+    @apply w-full max-w-[600px] mx-auto my-4
+  }
+
+  .project-card-img {
+    @apply w-full
+  }
+
+  .project-card-description {
+    @apply mb-4 h-auto overflow-y-auto max-h-[80px]
+  }
+
+  .project-card-stack {
+    @apply flex gap-4 my-5
+  }
+
+  .project-card-cta {
+    @apply flex gap-8
+  }
+
+  .project-card-btn {
+    @apply inline-block bg-sm-dark text-white font-semibold py-2 px-4 rounded-lg drop-shadow-2xl hover:bg-white hover:shadow-lg hover:shadow-white/20 hover:text-black
+  }
+
+  .no-project {
+    @apply text-2xl font-bold
+  }
+
+  .no-project-wrapper {
+    @apply flex justify-center items-center border-2 border-border min-h-[300px] rounded-lg
+  }
+
+  .contact {
+    @apply lg:mb-6
+  }
+
+  .contact-title {
+    @apply text-2xl font-bold mb-6 md:text-6xl lg:text-8xl
+  }
+
+
+  .contact-description {
+    @apply my-8 lg:w-3/4 lg:text-2xl lg:my-16
+  }
+
+  .contact-btn {
+    @apply py-2 px-4 bg-sm-dark rounded-lg text-white inline-block mb-8 lg:text-lg 
+
+  }
+
+  .footer{
+    @apply text-center sm:flex sm:justify-between sm:items-center text-[14px] py-6 font-semibold
+  }
+
+  .contact-socials {
+    @apply flex justify-center
+  }
+
+  .contact-socials a {
+    @apply mr-8 lg:mr-16 hover:text-light text-white outline-red-600
+  }
+
+  .contact-credentials {
+    @apply mt-6
+  }
+
+}
+
+@tailwind utilities;
+
+@layer utilities {
+  .project-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .project-wrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .on-hover {
+    @apply border-2 border-dark hover:border-2 hover:border-border transition duration-1000 ease-in-out
+  }
+
+  #testscroll::-webkit-scrollbar {
+    width: 0.3rem;
+  }
+
+  #testscroll::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 5px;
+  }
+
+  #testscroll::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255, 0.5);
+    border-radius: 5px;
+  }
+
+  #testscroll {
+    scrollbar-color: rgb(255, 255, 255, 0.5) rgba(255, 255, 255, 0.06);
+    scrollbar-width: thin;
+  }
+}
