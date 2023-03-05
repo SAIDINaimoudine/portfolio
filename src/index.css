@@ -66,11 +66,15 @@
   }
 
   .hero-socials {
-    @apply flex items-center justify-center gap-8 text-2xl mx-auto
+    @apply flex items-center justify-center gap-6 md:gap-8 text-2xl mx-auto
   }
 
-  .hero-socials img {
-    @apply hover:fill-light focus:fill-hover
+  .svg {
+    @apply w-[25px] h-[25px] md:w-[32px] md:h-[32px]
+  }
+
+  .icon {
+    @apply hover:fill-light fill-white
   }
 
   .section {
