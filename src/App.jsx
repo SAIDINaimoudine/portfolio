@@ -11,7 +11,7 @@ function App() {
       <main>
         <div className="container">
           <section className="hero" name="home">
-            <h1 className="hero-title"> Dynamic frontend developer from France.</h1>
+            <h1 className="hero-title"> Enthusiastic frontend developer from France.</h1>
             <p className="hero-description">
               Hi, I&apos; am Naïm a young developer who&apos;s eager to learn and build modern websites. Let&apos;s build great web site together.
             </p>
