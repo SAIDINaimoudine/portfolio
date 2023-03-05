@@ -23,7 +23,7 @@ function App() {
           <section className="about section" name="about">
             <h2 className="section-header">About</h2>
             <div className="about-body">
-              <img src="../../src/assets/photo-moi.jpg" className="max-h-[550px]" alt="myself" />
+              <img src="./assets/photo-moi.jpg" className="max-h-[550px]" alt="myself" />
               <div className="about-content">
                 <h2 className="about-title">SAIDI Naïmoudine</h2>
                 <div className="about-description">
