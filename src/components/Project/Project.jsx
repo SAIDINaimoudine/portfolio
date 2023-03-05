@@ -42,8 +42,8 @@ function Project() {
   return (
     <>
       <div className="slider-navigation">
-        <button role="button" aria-label="scroll left project caroussel" className="slider-btn" disabled={!(projects > 1)} aria-disabled={projects > 1 ? 'true' : 'false'}><img src='../../../public/icons/chevron-left-icon.svg' alt='scroll left' onClick={scrollLeft}/></button>
-        <button role="button" aria-label="scroll right project caroussel" className="slider-btn" disabled={!(projects > 1)} aria-disabled={projects > 1 ? 'true' : 'false'}><img src='../../../public/icons/chevron-right-icon.svg' alt='scroll right' onClick={scrollRight}/></button>
+        <button role="button" aria-label="scroll left project caroussel" className="slider-btn" disabled={!(projects > 1)} aria-disabled={projects > 1 ? 'true' : 'false'}><img src='./icons/chevron-left-icon.svg' alt='scroll left' onClick={scrollLeft}/></button>
+        <button role="button" aria-label="scroll right project caroussel" className="slider-btn" disabled={!(projects > 1)} aria-disabled={projects > 1 ? 'true' : 'false'}><img src='./icons/chevron-right-icon.svg' alt='scroll right' onClick={scrollRight}/></button>
       </div>
       <div className={projects > 0 ? 'project-wrapper' : 'no-project-wrapper'} id="project-wrapper">
         {projects > 0 ? getProjects(MyProjects) : <p className="no-project">No projects found</p>}

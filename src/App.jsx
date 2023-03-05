@@ -15,9 +15,9 @@ function App() {
               Hi, I&apos; am Naïm a young developer who&apos;s eager to learn and build modern websites. Let&apos;s build great web site together.
             </p>
             <div className="hero-socials">
-              <a href="https://fr.linkedin.com/in/na%C3%AFmoudine-saidi" target="_blank" rel="noreferrer" aria-label="go to linkedin account"><span><img src="../public/icons/linkedin-icon.svg" alt="linkedin logo" className='w-[35px]'/></span></a>
-              <a href="https://github.com/SAIDINaimoudine" target="_blank" rel="noreferrer" aria-label="go to github account"><span><img src="../public/icons/github-icon.svg" alt="github icon" className='w-[35px]'/></span></a>
-              <a href="https://twitter.com/Naim_js" target="_blank" rel="noreferrer" aria-label="go to Twitter account"><span><img src="../public/icons/twitter-icon.svg" alt="" className='w-[35px]'/></span></a>
+              <a href="https://fr.linkedin.com/in/na%C3%AFmoudine-saidi" target="_blank" rel="noreferrer" aria-label="go to linkedin account"><span><img src="./icons/linkedin-icon.svg" alt="linkedin logo" className='w-[35px]'/></span></a>
+              <a href="https://github.com/SAIDINaimoudine" target="_blank" rel="noreferrer" aria-label="go to github account"><span><img src="./icons/github-icon.svg" alt="github icon" className='w-[35px]'/></span></a>
+              <a href="https://twitter.com/Naim_js" target="_blank" rel="noreferrer" aria-label="go to Twitter account"><span><img src="./icons/twitter-icon.svg" alt="" className='w-[35px]'/></span></a>
             </div>
           </section>
           <section className="about section" name="about">
@@ -35,7 +35,7 @@ function App() {
                   <p>I&apos;m excited to continue developing my skills and working on projects that make a positive impact on people&apos;s lives. If you&apos;re looking for a passionate and dedicated frontend developer, please don&apos;t hesitate to reach out!</p>
                   <a href={resume} download="resume" className="about-resume on-hover">
                     Download my resume
-                    <span className="download-icon"><img src='../public/icons/download-icon.svg' alt='downloa'/></span>
+                    <span className="download-icon"><img src='./icons/download-icon.svg' alt='downloa'/></span>
                   </a>
                 </div>
               </div>
