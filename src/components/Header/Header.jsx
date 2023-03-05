@@ -31,7 +31,7 @@ function Header() {
             <li><Link to="work" href="#work" smooth="easeInOutQuart" offset={-80} duration={2200} className="navbar-link" onClick={closeMenu}>Work</Link></li>
             <li><Link to="contact" href="#contact" smooth="easeInOutQuart" offset={0} duration={3000} className="navbar-link" onClick={closeMenu}>Contact</Link></li>
           </ul>
-          <button className="close-modal" type="button" aria-label="close menu" onClick={closeMenu}><img src='../../../public/icons/close-icon.svg' /></button>
+          <button className="close-modal" type="button" aria-label="close menu" onClick={closeMenu}><img src='./icons/close-icon.svg' /></button>
         </nav>
       </div>
     </header>

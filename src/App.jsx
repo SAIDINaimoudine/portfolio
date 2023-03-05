@@ -1,5 +1,6 @@
 import './index.css'
 import resume from './assets/SAIDI_Naïmoudine_Resume.pdf'
+import photo from './assets/photo-moi.jpg'
 import Project from './components/Project/Project'
 import Header from './components/Header/Header'
 
@@ -23,7 +24,7 @@ function App() {
           <section className="about section" name="about">
             <h2 className="section-header">About</h2>
             <div className="about-body">
-              <img src="./assets/photo-moi.jpg" className="max-h-[550px]" alt="myself" />
+              <img src={photo} className="max-h-[550px]" alt="myself" />
               <div className="about-content">
                 <h2 className="about-title">SAIDI Naïmoudine</h2>
                 <div className="about-description">
@@ -35,7 +36,7 @@ function App() {
                   <p>I&apos;m excited to continue developing my skills and working on projects that make a positive impact on people&apos;s lives. If you&apos;re looking for a passionate and dedicated frontend developer, please don&apos;t hesitate to reach out!</p>
                   <a href={resume} download="resume" className="about-resume on-hover">
                     Download my resume
-                    <span className="download-icon"><img src='./icons/download-icon.svg' alt='downloa'/></span>
+                    <span className="download-icon"><img src='./icons/download-icon.svg' alt='download'/></span>
                   </a>
                 </div>
               </div>
