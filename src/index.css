@@ -200,6 +200,15 @@
 @tailwind utilities;
 
 @layer utilities {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  :root {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
   .project-wrapper::-webkit-scrollbar {
     display: none;
   }
@@ -214,21 +223,21 @@
     @apply border-2 border-dark hover:border-2 hover:border-border transition duration-1000 ease-in-out
   }
 
-  #testscroll::-webkit-scrollbar {
+  #projectScroll::-webkit-scrollbar {
     width: 0.3rem;
   }
 
-  #testscroll::-webkit-scrollbar-track {
+  #projectScroll::-webkit-scrollbar-track {
     background: rgba(255, 255, 255, 0.06);
     border-radius: 5px;
   }
 
-  #testscroll::-webkit-scrollbar-thumb {
+  #projectScroll::-webkit-scrollbar-thumb {
     background: rgb(255, 255, 255, 0.5);
     border-radius: 5px;
   }
 
-  #testscroll {
+  #projectScroll {
     scrollbar-color: rgb(255, 255, 255, 0.5) rgba(255, 255, 255, 0.06);
     scrollbar-width: thin;
   }

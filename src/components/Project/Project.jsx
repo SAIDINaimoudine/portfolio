@@ -21,7 +21,7 @@ function Project() {
         <div className="project-card-img-container">
           <img src={project.image} className="project-card-img" alt="Project screenshot" />
         </div>
-        <p className="project-card-description" id="testscroll">{project.description}</p>
+        <p className="project-card-description" id="projectScroll">{project.description}</p>
         <div className="project-card-stack">
           {project.stack.map(img => <img key={img.id} src={img} className="w-[25px]" alt="stack icon" />)}
         </div>
