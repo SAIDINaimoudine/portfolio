@@ -26,8 +26,8 @@ function Project() {
           {project.stack.map(img => <img key={img.id} src={img} className="w-[25px]" alt="stack icon" />)}
         </div>
         <div className="project-card-cta">
-          <a href={project.link} className="project-card-btn">view project</a>
-          <a href={project.github} className="project-card-btn">view github</a>
+          <a href={project.link} className="project-card-btn" target={'_blank'} rel="noreferrer">view project</a>
+          <a href={project.github} className="project-card-btn" target={'_blank'} rel="noreferrer">view github</a>
         </div>
       </div>
     )))

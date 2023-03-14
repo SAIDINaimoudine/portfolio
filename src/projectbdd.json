@@ -1,3 +1,11 @@
 [
-
+    {
+        "id": 1,
+        "title": "Portfolio",
+        "image": "../projects/screen-video.gif",
+        "description": "My portfolio on which you currently are.",
+        "stack":  ["/icons/react.png", "/icons/Tailwind_CSS_Logo.svg"],
+        "link": "https://portfolio-naimoudine.vercel.app/",
+        "github": "https://github.com/SAIDINaimoudine/portfolio"
+    }
 ]
